@@ -1,0 +1,25 @@
+.form1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.container {
+    border: px solid black;
+    height: 70%;
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: rgb(156, 194, 209);
+    padding: 20px;
+  }
+.label1{
+    float: left;
+}
+.padd{
+    margin: 5px;
+    padding: 1px;
+}
