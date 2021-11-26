@@ -6,9 +6,9 @@ import './form.css'
      
          this.state = {
               username:'',
-              comment:'',
-              topic:'',
-              radioValue: ''
+              email:'',
+              topic:'react',
+              radioValue: ''   
          }
      }
      handleUserNameChange=(event)=>{
@@ -16,9 +16,9 @@ import './form.css'
              username: event.target.value 
          })
      }
-     handleCommentChange=(event)=>{
+     handleEmailChange=(event)=>{
          this.setState({
-             comment: event.target.value
+             email: event.target.value
          })
      }
      handleTopicChange=(event)=>{
@@ -32,11 +32,12 @@ import './form.css'
         })
     }
      handleSubmit=(event)=>{
-         alert(`${this.state.username} ${this.state.comment} ${this.state.topic} ${this.state.radioValue}`)
+         alert(`${this.state.username} ${this.state.email} ${this.state.topic} ${this.state.radioValue}`)
          event.preventDefault()
      }
      
     render() {
+        console.log(this.state.email)
         return (
             <form className='form1' onSubmit={this.handleSubmit}>
                 <div className='container'>
@@ -47,27 +48,27 @@ import './form.css'
                     <br/>
 
                     <div>
-                        <label className="label1">comments</label>
+                        <label className="label1">Email</label>
                     </div>        
-                    <textarea className="padd" value={this.state.comment} onChange={this.handleCommentChange}></textarea>
+                    <input className="padd" value={this.state.email} onChange={this.handleEmailChange}/>
                     <br/>
                     <div>
-                         <label className="label1">topic</label>
-                    </div>
+                        <label className="label1">topic</label>
                    
                     <select  value={this.state.topic} onChange={this.handleTopicChange}>
                         <option value="react">react</option>
                         <option value="angular">angular</option>
                         <option value="vue">vue</option>  
                     </select>
+                    </div>
                     <br/>
 
-                    <input type="radio" value={this.state.radioValue} onClick={this.handleRadioChange}/>
-                    <label for="react">React</label>
-                    <input type="radio" value={this.state.radioValue} onClick={this.handleRadioChange}/>
-                    <label for="angular">angular</label>
-                    <input type="radio" value={this.state.radioValue} onClick={this.handleRadioChange}/>
-                    <label for="vue">vue</label>
+                    <input type="radio" name="a" value="react" onClick={this.handleRadioChange}/>
+                    <label htmlFor="react">React</label>
+                    <input type="radio" name="a" value="angular" onClick={this.handleRadioChange}/>
+                    <label htmlFor="angular">angular</label>
+                    <input type="radio" name="a" value="vue" onClick={this.handleRadioChange}/>
+                    <label htmlFor="vue">vue</label>
                 <br/>
                     <button type='submit'>Submit</button>
                 <br/>

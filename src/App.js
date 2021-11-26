@@ -1,27 +1,24 @@
 import React,{ Component } from 'react';  
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import NameList from './components/NameList';
-// import Greet from './components/Greet';
-// import Welcome from './components/Welcome';
-// import Hello from './components/hello';
-// import Message from './components/Message';
-// import Counter from './components/Counter';
-// import FunctionClick from './components/FunctionClick';
-// import ClassClick from './components/ClassClick';
-// import EasyUiForm from './components/EasyUIForm';
-// import EventBind from './components/EventBind';
-// import ParentComponent from './components/ParentComponent';
-// import UserGreeting from './components/UserGreeting';
-// import Navbar from './components/Navbar';
 import Form from './components/Form';
+// import { Routes , Route } from "react-router-dom";
+// import Home from "./components/Pages/Home"
+// import Address from "./components/Pages/Address"
+// import Navbar from './components/Navbar'
+// import ComboBox1 from './components/ComboBox1';
 
 class App extends Component{  
   render(){
     return(
       <div className="App">
         <Form/>
-        {/* <Navbar/> */}
+        {/* <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/address" element={<Address/>}></Route>
+        </Routes> */}
+        {/* <ComboBox1/> */}
         {/* <NameList/> */}
         {/* <UserGreeting/> */}
         {/* <ParentComponent/> */}

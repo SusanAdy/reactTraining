@@ -3,7 +3,7 @@ import { Form, FormField, TextBox, CheckBox, ComboBox, LinkButton } from 'rc-eas
  
 class EasyUiForm extends React.Component {
   constructor() {
-    super();
+    super()
     this.state = {
       user: {
         name: null,

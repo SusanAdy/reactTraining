@@ -1,5 +1,4 @@
 import React from 'react'
-import Person from './Person'
 import './table.css'
 function NameList() {
     const persons=[
